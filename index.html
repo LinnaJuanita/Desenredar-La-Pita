@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+        <!-- <a-camera position="0 1.5 60"></a-camera> -->
+        <a-camera position="0 7 0"></a-camera>
+        <a-entity environment="groundColor2:#7399BB;groundColor:#79A3C8 ;lighting:point;groundTexture:walkernoise;ground:spikes;dressingColor:#79A3C8 ;horizonColor:#79A3C8 ;skyColor:#79A3C8 ;skyType:gradient;active:true;lightPosition:-0.11 1 0.33;fog:0.78;dressingScale:1;dressingVariance:0 0 0" preset-switcher="" id="environment"><a-entity class="environment" position="0 50 0" light="intensity:0.6;color:#ffffff;groundColor:#79A3C8 ;type:hemisphere"></a-entity><a-entity class="environment" position="-0.11 1 0.33" light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.6;type:point"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 3" shadow="cast:false;receive:false"></a-entity><a-entity class="environmentDressing environment" visible="false"></a-entity><a-sky radius="200" theta-length="110" class="environment" geometry="" material="npot:false;shader:gradientshader;topColor:#79A3C8 ;bottomColor:#79A3C8 "></a-sky><a-entity id="stars" visible="false"></a-entity></a-entity>
+     
+cabeza
+    <a-assets>
+        <a-asset-item id="whoman" src="./head.gltf"></a-asset-item>
+      </a-assets>
+      <a-gltf-model src="#whoman" position="0 -0.6 27" scale="30 30 30" color="#ADE3D6" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-gltf-model>
+
+      <a-image src="./una.png" position="0 0 0" scale="5 5 5"></a-image>
+
+do done
+      <a-image src="./malentendido_2.png" position="24 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 20 0.6 7;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 3 0.7 7;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23 0.8 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 23 0.5 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 2 0.6 26;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -21 0.7 7;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 1 0.8 45;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 25 0.9 45;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -25 0.6 26;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -21 0.5 7;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -22 0.7 45;"></a-image>
+
+  dz done
+      <a-image src="./malentendido_2.png" position="24 0.3 14" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 25 1 14;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 14" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 1 1 14;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 32" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23 1 32;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 32" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 23 1 32;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 0.3 32" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 1 1 32;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 14" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -22 1.5 7;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 90" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23 1 14;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 90" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 22 1.5 90;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 32" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 1 32;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 14" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 2 14;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 90" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -25 2 90;"></a-image>
+
+dx done
+      <a-image src="./malentendido_2.png" position="48 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1 8;"></a-image>
+      <a-image src="./malentendido_2.png" position="10 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 2 6;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1 27;"></a-image>
+      <a-image src="./malentendido_1.png" position="48 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1 25;"></a-image>
+      <a-image src="./malentendido_1.png" position="10 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 2 27;"></a-image>
+      <a-image src="./malentendido_2.png" position="-48 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1 6;"></a-image>
+      <a-image src="./malentendido_2.png" position="10 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 2 44"></a-image>
+      <a-image src="./malentendido_1.png" position="48 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1 46;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 26" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1 27;"></a-image>
+      <a-image src="./malentendido_2.png" position="-48 0.3 7" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 2 9;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 45" rotation="-90 0 -10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 2 47;"></a-image>
+
+ eo done
+     <a-image src="./malentendido_3.png" position="23 0.5 5" rotation="3 0 3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 23 1 5;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 9" rotation="3 0 2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4000; loop: true; dir:alternate; to: 0 1.5 9;"></a-image>
+      <a-image src="./malentendido_3.png" position="-25 0.5 20" rotation="3 0 4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4500; loop: true; dir:alternate; to: -25 1.3 20;"></a-image>
+      <a-image src="./malentendido_3.png" position="22 0.5 24" rotation="3 0 -4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5300; loop: true; dir:alternate; to: 22 0.8 24;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 27" rotation="3 0 -2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to: 0 1.4 27;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 14" rotation="3 0 -3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to:-24 1.1 14;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 44" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5000; loop: true; dir:alternate; to: 0 0.9 44;"></a-image>
+      <a-image src="./malentendido_3.png" position="24 0.5 30" rotation="3 0 1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 0.77 30;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 29" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4500; loop: true; dir:alternate; to: -24 1.6 29;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 17" rotation="3 0 3" scale="35 1.5 0" color="#000000"animation="property: position; dur: 53000; loop: true; dir:alternate; to: -24 1.5 17;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 36" rotation="3 0 2" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4000; loop: true; dir:alternate; to: -24 1.2 36;"></a-image>
+
+  ex done
+      <a-image src="./malentendido_3.png" position="46 0.5 5" rotation="3 0 3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1 5;"></a-image>
+      <a-image src="./malentendido_3.png" position="10 0.5 9" rotation="3 0 2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4000; loop: true; dir:alternate; to: 12 1 9;"></a-image>
+      <a-image src="./malentendido_3.png" position="-50 0.5 20" rotation="3 0 4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4500; loop: true; dir:alternate; to: -52 1 20;"></a-image>
+      <a-image src="./malentendido_3.png" position="44 0.5 24" rotation="3 0 -4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5300; loop: true; dir:alternate; to: 46 1 24;"></a-image>
+      <a-image src="./malentendido_3.png" position="10 0.5 27" rotation="3 0 -2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to: 12 1 27;"></a-image>
+      <a-image src="./malentendido_3.png" position="-48 0.5 14" rotation="3 0 -3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to:-50 1 14;"></a-image>
+      <a-image src="./malentendido_3.png" position="10 0.5 44" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5000; loop: true; dir:alternate; to: 12 1 44;"></a-image>
+      <a-image src="./malentendido_3.png" position="48 0.5 30" rotation="3 0 1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 50 1 30;"></a-image>
+      <a-image src="./malentendido_3.png" position="-48 0.5 29" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4500; loop: true; dir:alternate; to: -50 1 29;"></a-image>
+      <a-image src="./malentendido_3.png" position="-48 0.5 17" rotation="3 0 3" scale="35 1.5 0" color="#000000"animation="property: position; dur: 53000; loop: true; dir:alternate; to: -50 1 17;"></a-image>
+      <a-image src="./malentendido_3.png" position="-48 0.5 36" rotation="3 0 2" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4000; loop: true; dir:alternate; to: -50 1 36;"></a-image>
+
+  ez done   
+      <a-image src="./malentendido_3.png" position="23 0.5 10" rotation="3 0 3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 23 2 11;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 18" rotation="3 0 2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4000; loop: true; dir:alternate; to: 0 2 19;"></a-image>
+      <a-image src="./malentendido_3.png" position="-25 0.5 40" rotation="3 0 4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 4500; loop: true; dir:alternate; to: -25 2 41;"></a-image>
+      <a-image src="./malentendido_3.png" position="22 0.5 48" rotation="3 0 -4" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5300; loop: true; dir:alternate; to: 22 2 49;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 54" rotation="3 0 -2" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to: 0 2 55;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 28" rotation="3 0 -3" scale="35 1.5 0" color="#000000" animation="property: position; dur: 5000; loop: true; dir:alternate; to:-24 2 30;"></a-image>
+      <a-image src="./malentendido_3.png" position="0 0.5 88" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5000; loop: true; dir:alternate; to: 0 2 90;"></a-image>
+      <a-image src="./malentendido_3.png" position="24 0.5 60" rotation="3 0 1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 1 62;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 58" rotation="3 0 -1" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4500; loop: true; dir:alternate; to:-24 1 60;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 34" rotation="3 0 3" scale="35 1.5 0" color="#000000"animation="property: position; dur: 53000; loop: true; dir:alternate; to: -24 1 36;"></a-image>
+      <a-image src="./malentendido_3.png" position="-24 0.5 72" rotation="3 0 2" scale="35 1.5 0" color="#000000"animation="property: position; dur: 4000; loop: true; dir:alternate; to: -24 1 74;"></a-image>
+
+   co done
+      <a-image src="./malentendido_2.png" position="24 0.3 7" otation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 0.6 6;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 0.5 5;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0.7 27;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 0.6 25;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="0 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 0.5 24;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0.7 8;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 0.6 46;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 0.5 44;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0.7 25;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0.6 5;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0.5 47;"></a-image>></a-image>
+
+cz done
+      <a-image src="./malentendido_2.png" position="24 0.3 14" otation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 22 2 14;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 14" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 2 1 14;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 32" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 1 32;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 32" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 26 1 32;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="0 0.3 32" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 2 2 32;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 14" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -22 2 14;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="0 0.3 90" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 2 2 90;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="24 0.3 90" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 22 2 90;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 32" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -22 1 32;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-24 0.3 14" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 1 14;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-24 0.3 90" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 1 90;"></a-image>></a-image>
+
+cx done
+      <a-image src="./malentendido_2.png" position="48 0.3 7" otation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 46 2 7;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="10 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 8 2 7;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -46 2 26;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="48 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 46 2 26;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="10 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 8 2 26;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-48 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -46 2 7;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="10 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 8 2 45;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="48 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 46 2 45;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 26" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -46 2 26;"></a-image>></a-image>
+      <a-image src="./malentendido_2.png" position="-48 0.3 7" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -46 2 7;"></a-image>></a-image>
+      <a-image src="./malentendido_1.png" position="-48 0.3 45" rotation="-90 0 -10" scale="25 20 -20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -46 2 45;"></a-image>></a-image>
+
+bo done
+      <a-image src="./malentendido_2.png" position="24 1 7" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24.3 1.3 7.3;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1 7" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0.3 1.3 7.3;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24.3 1.3 26.3;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24.4 1.4 26.4;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0.4 1.4 26.4;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1 7" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24.4 1.4 7.4;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1 45" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0.3 0.7 44.7;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1 45" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 23.7 0.7 44.7;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23.7 0.7 25.7;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1 7" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23.3 0.3 6.3;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 45" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23.3 0.3 44.3;"></a-image>
+
+bx done
+<a-image src="./malentendido_2.png" position="48 1 7" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1.7 7.7;"></a-image>
+<a-image src="./malentendido_2.png" position="10 1 7" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 1.7 7.7;"></a-image>
+<a-image src="./malentendido_1.png" position="-48 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1.8 26.8;"></a-image>
+<a-image src="./malentendido_1.png" position="48 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 1.8 26.8;"></a-image>
+<a-image src="./malentendido_1.png" position="10 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 1.8 26.8;"></a-image>
+<a-image src="./malentendido_2.png" position="-48 1 7" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 2 8;"></a-image>
+<a-image src="./malentendido_2.png" position="10 1 45" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 10 2 46;"></a-image>
+<a-image src="./malentendido_1.png" position="48 1 45" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 48 2.5 46.5;"></a-image>
+<a-image src="./malentendido_1.png" position="-48 1 26" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1.5 26.5;"></a-image>
+<a-image src="./malentendido_2.png" position="-48 1 7" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1.5 7.5;"></a-image>
+<a-image src="./malentendido_1.png" position="-48 1 45" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -48 1.5 45.5;"></a-image>
+
+bz done
+      <a-image src="./malentendido_2.png" position="24 1 14" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 25 2 14;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1 14" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 1 0 14;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 32" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23 0 32;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1 32" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 26 2 32;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 1 32" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to:2 2 32;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1 14" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -23.5 2.5 14;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1 90" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0.5 0.5 90;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1 90" rotation="-90 0 11" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 22 0.1 90;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 32" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -22.2 1.5 32;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1 14" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24.7 1.3 14;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1 90" rotation="-90 0 10" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24.7 1.3 90;"></a-image>
+
+ao done
+      <a-image src="./malentendido_2.png" position="24 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 26 1.3 7;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 2 1.3 7;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -26 1.3 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 27 1.3 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 26 1.3 26;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 3 1.3 26"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 1.3 47;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 1.3 42;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 1.3 23;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 1.3 9;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 1.3 48;"></a-image>
+az done
+      <a-image src="./malentendido_2.png" position="24 1.3 14" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 2 13;"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1.3 14" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 2 13;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 32" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 2 31;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1.3 32" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 3 31;"></a-image>
+      <a-image src="./malentendido_1.png" position="0 1.3 32" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 3 33;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1.3 14" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to:-24 3 15"></a-image>
+      <a-image src="./malentendido_2.png" position="0 1.3 90" rotation="-90 0 20" scale="25 20 20" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 0 3 91;"></a-image>
+      <a-image src="./malentendido_1.png" position="24 1.3 90" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 24 0 92;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 32" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0 33;"></a-image>
+      <a-image src="./malentendido_2.png" position="-24 1.3 14" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0 12;"></a-image>
+      <a-image src="./malentendido_1.png" position="-24 1.3 90" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -24 0 88;"></a-image>
+
+
+      ax done
+      <a-image src="./malentendido_2.png" position="48 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 47 2 7;"></a-image>
+      <a-image src="./malentendido_2.png" position="10 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 19 2 7;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -49 2 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="48 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 49 2 26;"></a-image>
+      <a-image src="./malentendido_1.png" position="10 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: 11 2 26;"></a-image>
+      <a-image src="./malentendido_2.png" position="-48 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -50 1.3 8"></a-image>
+      <a-image src="./malentendido_2.png" position="10 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000"animation="property: position; dur: 5500; loop: true; dir:alternate; to: 8 1.3 46;"></a-image>
+      <a-image src="./malentendido_1.png" position="48 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to:47 1.3 44;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 1.3 26" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -47.5 1.3 25;"></a-image>
+      <a-image src="./malentendido_2.png" position="-48 1.3 7" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -49.5 1.3 6;"></a-image>
+      <a-image src="./malentendido_1.png" position="-48 1.3 45" rotation="-90 0 20" scale="25 20 20" color="#000000" animation="property: position; dur: 5500; loop: true; dir:alternate; to: -49.9 1.3 44;"></a-image>
+
+      
+
+
+
+
+
+
+      <a-image src="./palabra.png" position="24 0.3 45" rotation="20.642 171.049 -26.409" scale="7 4 4" color="#DAF7A6"></a-image>
+
+
+
+
+
+
+      
+     
+      
+
+
+
+    </a-scene>
+</html>
